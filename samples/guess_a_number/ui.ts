@@ -1,6 +1,5 @@
-import {readLine, write} from "./hosts/browserio.ts";
-
-// import {readLine, write} from "./hosts/terminalio.ts";
+//import {readLine, write} from "./hosts/browserio.ts";
+import {readLine, write} from "./hosts/terminalio.ts";
 
 export async function readNumber(prompt:string): Promise<number> {
     while(true) {

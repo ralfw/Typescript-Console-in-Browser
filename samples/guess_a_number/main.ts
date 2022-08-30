@@ -1,6 +1,5 @@
-import { write, writeLine, readLine } from "./hosts/browserio.ts"
-
-// import { write, writeLine, readLine } from "./hosts/terminalio.ts"
+//import { write, writeLine, readLine } from "./hosts/browserio.ts"
+import { write, writeLine, readLine } from "./hosts/terminalio.ts"
 
 import { GuessANumberGame, GuessClassifications } from "./guessinggame.ts"
 import { readNumber, readRangeLimit } from "./ui.ts"
