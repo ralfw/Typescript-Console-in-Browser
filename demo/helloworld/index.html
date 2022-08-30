@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+        font-family: "Courier New", monospace;
+        background-color: black;
+        color: white
+        }
+
+        input {
+            font-family: "Courier New", monospace;
+        }
+    </style>
+</head>
+
+<body id="terminal" onload="main()"></body>
+
+<!---
+Compile main.ts before opening this page like this:
+
+1. Replace terminalio.ts with browserio.ts
+2. Run deno bundle main.ts main.js --config tsconfig.json
+--->
+
+<script type="module">
+    import { main } from "./main.js";
+    window.main = main;
+</script>
+
+</html>
