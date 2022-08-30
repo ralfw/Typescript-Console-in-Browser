@@ -5,15 +5,16 @@ export async function sleep(delay:number) {
 
 export function write(text:string) {
     const terminal = document.getElementById("terminal");
-    const line = document.createTextNode(text);
-    terminal?.append(line);
+    const lines = text.split("\n");
+    for(var i=0; i<lines.length; i++) {
+        if (i>0) terminal?.append(document.createElement("br"));
+        const line = document.createTextNode(lines[i]);
+        terminal?.append(line);
+    }
 }
 
 export function writeLine(text:string) {
-    write(text);
-
-    const terminal = document.getElementById("terminal");
-    terminal?.append(document.createElement("br"));
+    write(text + "\n");
 }
 
 
