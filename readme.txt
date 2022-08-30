@@ -53,4 +53,24 @@ needs to be converted to Javascript. That's done with
 
 After that only index.html and main.js need to be in the same directory.
 Please note: index.html needs to opened from a web server due to
-CORS restrictions, https://mydomain.com/index.html
+CORS restrictions. Check out a hello-world example here:
+
+https://typescript-console-in-browser.netlify.app/helloworld/index.html
+
+This is where the demo/ directory tree got deployed.
+
+
+New Project
+-----------
+
+To set up a new project create a directory with this content:
+
+hosts/
+    browserio.ts
+    terminalio.ts
+index.html
+index.ts
+main.ts
+tsconfig.json
+
+The only file to modify is main.ts.
