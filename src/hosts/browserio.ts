@@ -17,7 +17,7 @@ export function writeLine(text:string) {
 }
 
 
-export async function readLine() {
+export async function readLine(): Promise<string> {
     const input = document.createElement("input");
     input.setAttribute("id", "editor");
     input.setAttribute("type", "text");
