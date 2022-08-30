@@ -2,7 +2,7 @@
 1. deno bundle main.ts main.js --config tsconfig.json
 2. open index.html from a web server (double clicking the file won't work due to CORS restrictions)
 */
-// import { write, writeLine, readLine } from "./hosts/browserio.ts"
+//import { write, writeLine, readLine } from "./hosts/browserio.ts"
 
 /*
 deno run index.ts

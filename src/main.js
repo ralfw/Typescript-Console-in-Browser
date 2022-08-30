@@ -7,13 +7,15 @@ async function sleep(delay) {
 }
 function write(text) {
     const terminal = document.getElementById("terminal");
-    const line = document.createTextNode(text);
-    terminal?.append(line);
+    const lines = text.split("\n");
+    for(var i = 0; i < lines.length; i++){
+        if (i > 0) terminal?.append(document.createElement("br"));
+        const line = document.createTextNode(lines[i]);
+        terminal?.append(line);
+    }
 }
 function writeLine(text) {
-    write(text);
-    const terminal = document.getElementById("terminal");
-    terminal?.append(document.createElement("br"));
+    write(text + "\n");
 }
 async function readLine() {
     const input = document.createElement("input");
@@ -40,7 +42,7 @@ async function readLine() {
     });
 }
 async function main() {
-    write("Name: ");
+    write("Nam\ne: ");
     let name = await readLine();
     writeLine("Hello, " + name + "!");
 }
